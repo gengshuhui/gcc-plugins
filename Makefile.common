@@ -2,6 +2,7 @@
 
 # Where we installed gcc and its headers
 INSTALLDIR=/home/roger/soft/gcc/gcc-5.2
+INSTALLDIR=/usr
 
 CC=$(INSTALLDIR)/bin/gcc
 CXX=$(INSTALLDIR)/bin/g++

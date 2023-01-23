@@ -1,6 +1,20 @@
 Install gcc
 ===========
+1. ubuntu 18
+apt-get install gcc-7-plugin-dev
+vim Makefile.common
+INSTALLDIR=/usr
 
+2. debug plugins
+cgdb --args gcc -fplugin=./callbacks.so -x c -c test.c
+b plugin_init
+set follow-fork-mode child
+r
+
+3. check header files
+dpkg -L gcc-7-plugin-dev
+
+---------------------
 Download gcc and unpack it
 
     $ wget http://ftp.gnu.org/gnu/gcc/gcc-5.2.0/gcc-5.2.0.tar.bz2
