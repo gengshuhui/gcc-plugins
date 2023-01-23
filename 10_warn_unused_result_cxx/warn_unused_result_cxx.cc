@@ -125,7 +125,7 @@ namespace
                 gimple_stmt_iterator gsi;
                 for (gsi = gsi_start_bb (bb); !gsi_end_p (gsi); gsi_next (&gsi))
                 {
-                    gimple stmt = gsi_stmt (gsi);
+                    gimple *stmt = gsi_stmt (gsi);
 
                     location_t loc = gimple_location (stmt);
                     switch (gimple_code(stmt))
@@ -204,7 +204,7 @@ namespace
                 gimple_stmt_iterator gsi;
                 for (gsi = gsi_start_bb (bb); !gsi_end_p (gsi); gsi_next (&gsi))
                 {
-                    gimple stmt = gsi_stmt (gsi);
+                    gimple *stmt = gsi_stmt (gsi);
 
                     switch (gimple_code(stmt))
                     {

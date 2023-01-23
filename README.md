@@ -1,6 +1,6 @@
-Install gcc
-===========
-1. ubuntu 18
+Use gcc in ubuntu 18
+==========
+1. install develop headers
 apt-get install gcc-7-plugin-dev
 vim Makefile.common
 INSTALLDIR=/usr
@@ -14,7 +14,8 @@ r
 3. check header files
 dpkg -L gcc-7-plugin-dev
 
----------------------
+Install gcc
+===========
 Download gcc and unpack it
 
     $ wget http://ftp.gnu.org/gnu/gcc/gcc-5.2.0/gcc-5.2.0.tar.bz2
