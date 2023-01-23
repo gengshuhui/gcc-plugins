@@ -2,3 +2,6 @@
 *.swo
 *.so
 *.o
+*.elf
+.DS_Store
+
