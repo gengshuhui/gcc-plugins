@@ -1,19 +1,19 @@
 Use gcc in ubuntu 18
 ==========
-1. install develop headers
+install develop headers
 
     apt-get install gcc-7-plugin-dev
     vim Makefile.common
     INSTALLDIR=/usr
 
-2. debug plugins
+debug plugins
 
     cgdb --args gcc -fplugin=./callbacks.so -x c -c test.c
     b plugin_init
     set follow-fork-mode child
     r
 
-3. check header files
+check header files
 
     dpkg -L gcc-7-plugin-dev
 
